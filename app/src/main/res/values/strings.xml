@@ -1,0 +1,95 @@
+<resources>
+
+    <string name="app_name">在线安装</string>
+    <!-- end dialog string  -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wb_order_manager_list_title">工单管理详情</string>
+    <string name="wb_order_manager_date_select">日期选择</string>
+    <string name="wb_order_manager_date_select_begin_btn">起始日期选择</string>
+    <string name="wb_order_manager_date_select_end_btn">结束日期选择</string>
+    <string name="wb_order_manager_date_select_confirm_btn">确认</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- 自动更新 -->
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <!-- 主框架 -->
+    <string name="main_plan">记忆</string>
+    <string name="main_process">未来</string>
+    <string name="main_statement">视频</string>
+    <string name="main_mine">我</string>
+    <!-- 报表模块 -->
+    <string name="statementModule">报表模块</string>
+    <string name="quantityStatistics">电梯安装数量统计</string>
+    <string name="perferenceAssessment">绩效考核</string>
+    <string name="continuouslyUpdate">报表持续更新中...</string>
+
+    <!-- 我的模块 -->
+    <string name="scan">扫一扫</string>
+    <string name="checkUpdate">检查更新</string>
+    <string name="deleteCache">清除缓存</string>
+    <string name="updatePassword">修改密码</string>
+    <string name="quitLogin">退出登录</string>
+    <!-- 登录模块 -->
+    <string name="set">配置</string>
+    <string name="wb_login_txt_remember">记住密码</string>
+    <string name="install_setting">服务器地址配置</string>
+    <string name="splash_text">Copyright 2018 FengChi.All right Reserved</string>
+
+    <!-- plan模块 -->
+    <string name="plan_search">搜索相关景点</string>
+    <string name="do_plan">已确认周期</string>
+    <string name="undo_plan">未确认周期</string>
+
+    <!-- 进度反馈模块 -->
+    <string name="progress_module">进展反馈</string>
+    <string name="elevator_search">搜索相关电梯</string>
+    <!-- 搜索模块 -->
+    <string name="loading">加载中...</string>
+    <!-- 指纹识别 -->
+    <string name="fingerprint_success">Fingerprint recognized.</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again.</string>
+
+    <!-- Dialog info -->
+    <string name="no_sensor_dialog_title">No fingerprint sensor</string>
+    <string name="no_sensor_dialog_message">No fingerprint sensor on your device, click cancel to exit.</string>
+    <string name="no_fingerprint_enrolled_dialog_title">No fingerprint enrolled</string>
+    <string name="no_fingerprint_enrolled_dialog_message">No fingerprint enrolled, enter\n
+        <font fgcolor="green">Setting->Security->Nexus Imprint\n</font>
+        to enrollor click cancel to exit.</string>
+    <string name="ok_btn_dialog">OK</string>
+    <string name="cancel_btn_dialog">Cancel</string>
+
+    <!-- auth result error amd help code warning -->
+    <string name="AcquiredGood_warning">The image acquired was good.</string>
+    <string name="AcquiredImageDirty_warning">The fingerprint image was too noisy due to suspected or detected dirt on the sensor.
+        For example, it\'s reasonable to return this after multiple AcquiredInsufficient or
+        actual detection of dirt on the sensor (stuck pixels, swaths, etc.).
+        The user is expected to take action to clean the sensor when this is returned.</string>
+    <string name="AcquiredInsufficient_warning">The fingerprint image was too noisy to process due to
+        a detected condition (i.e. dry skin) or a possibly dirty sensor.</string>
+    <string name="AcquiredPartial_warning">Only a partial fingerprint image was detected.
+        During enrollment, the user should be informed on what needs to happen to resolve this problem, e.g., "press firmly on sensor."</string>
+    <string name="AcquiredTooFast_warning">The fingerprint image was incomplete due to quick motion.
+        While mostly appropriate for linear array sensors, this could also happen if the finger was moved during acquisition.
+        The user should be asked to move the finger slower (linear) or leave the finger on the sensor longer.</string>
+    <string name="AcquiredToSlow_warning">The fingerprint image was unreadable due to lack of motion.
+        This is most appropriate for linear array sensors that require a swipe motion.</string>
+    <string name="ErrorCanceled_warning">The operation was canceled because the fingerprint sensor is unavailable.
+        For example, this may happen when the user is switched,
+        the device is locked, or another pending operation prevents or disables it.</string>
+    <string name="ErrorHwUnavailable_warning">The hardware is unavailable. Try again later.</string>
+    <string name="ErrorLockout_warning">The operation was canceled because the API is locked out due to too many attempts.</string>
+    <string name="ErrorNoSpace_warning">Error state returned for operations like enrollment;
+        the operation cannot be completed because there\'s not enough storage remaining to complete the operation.</string>
+    <string name="ErrorTimeout_warning">Error state returned when the current request has been running too long.
+        This is intended to prevent programs from waiting for the fingerprint sensor indefinitely.
+        The timeout is platform and sensor-specific, but is generally about 30 seconds.</string>
+    <string name="ErrorUnableToProcess_warning">Error state returned when the sensor was unable to process the current image.</string>
+
+</resources>

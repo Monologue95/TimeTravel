@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="main_theme">#538fe6</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="title_color">#F1F1F1</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000</color>
+    <color name="main_textcolor">#212121</color>
+    <color name="update_color">#da1d1d</color>
+    <color name="cutOff">#cccccc</color>
+    <color name="buttonBackground">#F5F5F5</color>
+    <color name="textRed">#ef3636</color>
+    <color name="textGray">#c4c2c2</color>
+    <color name="textHint">#808080</color>
+    <color name="color_common_text">#82C6FE</color>
+    <color name="color_common_white">#ffffff</color>
+    <color name="blue_text">#3185fc</color>
+    <color name="line_color">#cdcdcd</color>
+    <color name="colorTextAssistant">#888888</color>
+    <color name="rainbow_red">#bf0c43</color>
+    <color name="rainbow_yellow">#f9ba15</color>
+    <color name="rainbow_green">#8eac00</color>
+    <color name="rainbow_blue">#127a97</color>
+    <color name="rainbow_purple">#452b72</color>
+    <integer-array name="rainbow">
+        <item>@color/rainbow_red</item>
+        <item>@color/rainbow_yellow</item>
+        <item>@color/rainbow_green</item>
+        <item>@color/rainbow_blue</item>
+        <item>@color/rainbow_purple</item>
+    </integer-array>
+</resources>

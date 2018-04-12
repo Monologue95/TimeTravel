@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!-- 引入标题头部 -->
+    <com.fengchi.TimeTravel.Utils.TitleBarView
+        xmlns:titlebarview="http://schemas.android.com/apk/res/com.juli.onlineInstall"
+        android:id="@+id/set_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebarview:leftable="true"
+        app:rightDrawableShow="false"
+        titlebarview:rightable="false"
+        app:titleText="@string/install_setting"
+        />
+    <View
+        android:id="@+id/v_zhong"
+        android:layout_below="@id/set_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/cutOff"
+        android:layout_marginTop="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp" >
+
+        <EditText
+            android:background="@drawable/loginedittextbg"
+            android:id="@+id/ip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textColor="@color/main_textcolor"
+            android:textSize="13sp"
+            android:text="http://iot.joylive.com:10030/"
+            android:layout_height="50dp"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:text="保存"
+            android:background="@color/title_color"
+            android:textSize="15sp"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

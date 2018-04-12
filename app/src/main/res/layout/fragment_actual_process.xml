@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.fengchi.TimeTravel.ActualProgress.ActualProcessFragment">
+
+    <LinearLayout
+        android:id="@+id/progress_search"
+        android:background="@color/main_theme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo7"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/logo"
+            android:background="@drawable/plan_search_shape"
+            android:gravity="center"
+            android:hint="@string/elevator_search"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textColorHint="@color/textHint"
+            />
+    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/travelBridge"
+        android:layout_below="@id/progress_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@mipmap/travelbridge"
+        android:visibility="visible"
+        />
+    <TextView
+        android:id="@+id/tvSpan"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:text="111"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travelBridge"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/tvSpan1"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSpan" />
+
+
+
+
+</RelativeLayout>

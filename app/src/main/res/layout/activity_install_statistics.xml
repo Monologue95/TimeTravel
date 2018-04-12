@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:transitionName="shareNames"
+    android:orientation="vertical">
+    <com.fengchi.TimeTravel.Utils.TitleBarView
+        xmlns:titlebarview="http://schemas.android.com/apk/res/com.juli.onlineInstall"
+        android:id="@+id/statement_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebarview:leftable="true"
+        app:rightDrawableShow="false"
+        titlebarview:rightable="false"
+        />
+    <View
+        android:id="@+id/v_goods"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/cutOff"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:paddingBottom="2dp"
+            android:text="今日"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量/台"
+            android:textSize="15dp"
+            android:textColor="@color/main_textcolor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:paddingBottom="2dp"
+            android:text="电梯安装统计(共285台)"
+            android:textColor="@color/main_textcolor"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="单位(台)"
+            android:textColor="@color/main_textcolor"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.3"
+        android:background="#FFFFFF" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <View
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom"
+            android:alpha="0.3"
+            android:background="#FFFFFF" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="月份/月"
+            android:textSize="15dp"
+            android:textColor="@color/main_textcolor"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

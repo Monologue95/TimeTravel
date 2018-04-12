@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_update"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:scaleType="fitStart"
+        android:src="@drawable/update7" />
+    <RelativeLayout
+        android:id="@+id/rl_update"
+        android:layout_below="@id/iv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新内容"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@color/main_textcolor"/>
+
+    <TextView
+        android:id="@+id/update_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优化逻辑优化逻辑优化逻辑优化逻辑"
+        android:layout_below="@id/update_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_textcolor"/>
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/update_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/update_color"
+        android:text="立即更新"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/update_shape"
+        />
+
+    </RelativeLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/deleteDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deletedialog1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>
+
+</FrameLayout>

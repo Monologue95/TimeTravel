@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plan_confirm"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fengchi.TimeTravel.Plan.View.PlanConfirmActivity">
+
+
+    <TextView
+        android:id="@+id/tv_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="项目开始时间"
+        android:textSize="18sp"
+        android:textColor="@color/main_textcolor"/>
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择完成时间"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_begin"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/main_textcolor"/>
+</RelativeLayout>

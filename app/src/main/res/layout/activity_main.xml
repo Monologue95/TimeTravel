@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 设置参照物，撑满整个页面（RelativeLayout） -->
+    <View
+        android:id="@+id/struct"
+        android:background="#f00"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        />
+    <FrameLayout
+        android:id="@+id/f1_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_alignBottom="@id/struct"
+        android:layout_toRightOf="@id/struct">
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#30808080"
+        android:layout_above="@+id/rg_tab"
+        />
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_rb1"
+            style="@style/radiobtn"
+            android:onClick="onTabClicked"
+            android:drawableTop="@drawable/radiotab_plan_selector"
+            android:text="@string/main_plan"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/radiotab_textcolor_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_rb2"
+            style="@style/radiobtn"
+            android:onClick="onTabClicked"
+            android:drawableTop="@drawable/radiotab_process_selector"
+            android:text="@string/main_process"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/radiotab_textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_rb3"
+            style="@style/radiobtn"
+            android:onClick="onTabClicked"
+
+            android:drawableTop="@drawable/radiotab_statement_selector"
+            android:text="@string/main_statement"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/radiotab_textcolor_selector" />
+
+
+        <RadioButton
+            android:id="@+id/rb_rb4"
+            style="@style/radiobtn"
+            android:onClick="onTabClicked"
+            android:drawableTop="@drawable/radiotab_my_selector"
+            android:text="@string/main_mine"
+            android:textSize="12sp"
+            android:paddingTop="7dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/radiotab_textcolor_selector" />
+    </RadioGroup>
+
+
+
+
+
+
+</RelativeLayout>
